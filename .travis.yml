@@ -1,0 +1,7 @@
+language: java
+jdk:
+  - openjdk16
+script: mvn clean install
+branches:
+  only:
+    master

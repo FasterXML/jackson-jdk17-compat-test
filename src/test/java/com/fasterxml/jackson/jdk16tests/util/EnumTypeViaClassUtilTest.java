@@ -5,7 +5,7 @@ import java.util.*;
 import com.fasterxml.jackson.databind.util.ClassUtil;
 import com.fasterxml.jackson.jdk16tests.Jdk16TestBase;
 
-public class ClassUtilTest extends Jdk16TestBase
+public class EnumTypeViaClassUtilTest extends Jdk16TestBase
 {
     /*
     /**********************************************************************

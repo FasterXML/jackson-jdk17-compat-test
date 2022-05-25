@@ -1,4 +1,4 @@
-package com.fasterxml.jackson.jdk16tests.rec;
+package com.fasterxml.jackson.jdk17tests.rec;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 
@@ -6,11 +6,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
-import com.fasterxml.jackson.jdk16tests.Jdk16TestBase;
+import com.fasterxml.jackson.jdk17tests.Jdk17TestBase;
 
 // [databind#3102]: fails on JDK 16 which finally blocks mutation
 // of Record fields.
-public class RecordWithJsonNaming3102Test extends Jdk16TestBase
+public class RecordWithJsonNaming3102Test extends Jdk17TestBase
 {
     @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
     public record SnakeRecord(int id, String toSnakeCase) {

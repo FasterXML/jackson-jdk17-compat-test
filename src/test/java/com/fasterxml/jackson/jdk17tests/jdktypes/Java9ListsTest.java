@@ -1,4 +1,4 @@
-package com.fasterxml.jackson.jdk16tests.jdktypes;
+package com.fasterxml.jackson.jdk17tests.jdktypes;
 
 import java.util.Collections;
 import java.util.List;
@@ -6,11 +6,11 @@ import java.util.Map;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;
-import com.fasterxml.jackson.jdk16tests.Jdk16TestBase;
-import com.fasterxml.jackson.jdk16tests.testutil.NoCheckSubTypeValidator;
+import com.fasterxml.jackson.jdk17tests.Jdk17TestBase;
+import com.fasterxml.jackson.jdk17tests.testutil.NoCheckSubTypeValidator;
 
 // for [databind#2900]
-public class Java9ListsTest extends Jdk16TestBase
+public class Java9ListsTest extends Jdk17TestBase
 {
     private final ObjectMapper MAPPER = JsonMapper.builder()
             .activateDefaultTypingAsProperty(

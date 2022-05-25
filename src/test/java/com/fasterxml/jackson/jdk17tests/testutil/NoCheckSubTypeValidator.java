@@ -1,4 +1,4 @@
-package com.fasterxml.jackson.jdk16tests.testutil;
+package com.fasterxml.jackson.jdk17tests.testutil;
 
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.cfg.MapperConfig;

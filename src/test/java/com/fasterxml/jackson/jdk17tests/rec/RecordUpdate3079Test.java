@@ -1,11 +1,11 @@
-package com.fasterxml.jackson.jdk16tests.rec;
+package com.fasterxml.jackson.jdk17tests.rec;
 
 import java.util.Collections;
 
 import com.fasterxml.jackson.databind.*;
-import com.fasterxml.jackson.jdk16tests.Jdk16TestBase;
+import com.fasterxml.jackson.jdk17tests.Jdk17TestBase;
 
-public class RecordUpdate3079Test extends Jdk16TestBase
+public class RecordUpdate3079Test extends Jdk17TestBase
 {
     record IdNameRecord(int id, String name) { }
 

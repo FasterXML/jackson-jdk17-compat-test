@@ -1,4 +1,4 @@
-package com.fasterxml.jackson.jdk16tests.rec;
+package com.fasterxml.jackson.jdk17tests.rec;
 
 import java.util.List;
 import java.util.Map;
@@ -9,9 +9,9 @@ import com.fasterxml.jackson.annotation.Nulls;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
 import com.fasterxml.jackson.databind.exc.InvalidNullException;
-import com.fasterxml.jackson.jdk16tests.Jdk16TestBase;
+import com.fasterxml.jackson.jdk17tests.Jdk17TestBase;
 
-public class RecordWithJsonSetter2974Test extends Jdk16TestBase
+public class RecordWithJsonSetter2974Test extends Jdk17TestBase
 {
     record RecordWithNonNullDefs(@JsonSetter(nulls=Nulls.AS_EMPTY) List<String> names,
             @JsonSetter(nulls=Nulls.FAIL) Map<String, Integer> agesByNames)

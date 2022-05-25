@@ -1,4 +1,4 @@
-package com.fasterxml.jackson.jdk16tests.misc;
+package com.fasterxml.jackson.jdk17tests.misc;
 
 import java.util.*;
 
@@ -6,11 +6,10 @@ import com.fasterxml.jackson.annotation.*;
 
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.json.JsonMapper;
-
-import com.fasterxml.jackson.jdk16tests.Jdk16TestBase;
+import com.fasterxml.jackson.jdk17tests.Jdk17TestBase;
 
 // [databind#2795]: Regression in 2.11.0, no mix-ins for JDK collections
-public class MixinForCreators2795Test extends Jdk16TestBase
+public class MixinForCreators2795Test extends Jdk17TestBase
 {
     @JsonTypeInfo(use = JsonTypeInfo.Id.CLASS)
     static class UnmodifiableCollectionMixin {

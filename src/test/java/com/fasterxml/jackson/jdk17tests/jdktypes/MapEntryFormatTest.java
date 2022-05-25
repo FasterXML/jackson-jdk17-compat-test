@@ -1,4 +1,4 @@
-package com.fasterxml.jackson.jdk16tests.jdktypes;
+package com.fasterxml.jackson.jdk17tests.jdktypes;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
@@ -8,10 +8,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import com.fasterxml.jackson.databind.*;
+import com.fasterxml.jackson.jdk17tests.Jdk17TestBase;
 
-import com.fasterxml.jackson.jdk16tests.Jdk16TestBase;
-
-public class MapEntryFormatTest extends Jdk16TestBase
+public class MapEntryFormatTest extends Jdk17TestBase
 {
     static class BeanWithMapEntry {
         // would work with any other shape than OBJECT, or without annotation:

@@ -1,11 +1,11 @@
-package com.fasterxml.jackson.jdk16tests.util;
+package com.fasterxml.jackson.jdk17tests.util;
 
 import java.util.*;
 
 import com.fasterxml.jackson.databind.util.ClassUtil;
-import com.fasterxml.jackson.jdk16tests.Jdk16TestBase;
+import com.fasterxml.jackson.jdk17tests.Jdk17TestBase;
 
-public class EnumTypeViaClassUtilTest extends Jdk16TestBase
+public class EnumTypeViaClassUtilTest extends Jdk17TestBase
 {
     /*
     /**********************************************************************

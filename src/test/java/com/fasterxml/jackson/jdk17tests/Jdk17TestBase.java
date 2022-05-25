@@ -1,11 +1,11 @@
-package com.fasterxml.jackson.jdk16tests;
+package com.fasterxml.jackson.jdk17tests;
 
 import java.util.Arrays;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 
-public class Jdk16TestBase
+public class Jdk17TestBase
     extends junit.framework.TestCase
 {
     /*

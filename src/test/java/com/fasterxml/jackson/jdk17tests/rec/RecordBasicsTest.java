@@ -1,4 +1,4 @@
-package com.fasterxml.jackson.jdk16tests.rec;
+package com.fasterxml.jackson.jdk17tests.rec;
 
 import com.fasterxml.jackson.annotation.*;
 
@@ -6,13 +6,13 @@ import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.databind.util.ClassUtil;
-import com.fasterxml.jackson.jdk16tests.Jdk16TestBase;
+import com.fasterxml.jackson.jdk17tests.Jdk17TestBase;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class RecordBasicsTest extends Jdk16TestBase
+public class RecordBasicsTest extends Jdk17TestBase
 {
     record EmptyRecord() { }
 

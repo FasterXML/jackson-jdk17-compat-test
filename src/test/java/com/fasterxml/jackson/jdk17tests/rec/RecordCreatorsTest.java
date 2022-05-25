@@ -1,13 +1,13 @@
-package com.fasterxml.jackson.jdk16tests.rec;
+package com.fasterxml.jackson.jdk17tests.rec;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 import com.fasterxml.jackson.databind.*;
-import com.fasterxml.jackson.jdk16tests.Jdk16TestBase;
+import com.fasterxml.jackson.jdk17tests.Jdk17TestBase;
 
-public class RecordCreatorsTest extends Jdk16TestBase
+public class RecordCreatorsTest extends Jdk17TestBase
 {
     record RecordWithCanonicalCtorOverride(int id, String name) {
         public RecordWithCanonicalCtorOverride(int id, String name) {

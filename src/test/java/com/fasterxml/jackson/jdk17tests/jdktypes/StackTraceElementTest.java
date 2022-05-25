@@ -1,13 +1,12 @@
-package com.fasterxml.jackson.jdk16tests.jdktypes;
+package com.fasterxml.jackson.jdk17tests.jdktypes;
 
 import com.fasterxml.jackson.annotation.*;
 
 import com.fasterxml.jackson.databind.*;
-
-import com.fasterxml.jackson.jdk16tests.Jdk16TestBase;
+import com.fasterxml.jackson.jdk17tests.Jdk17TestBase;
 
 // for [databind#1794]
-public class StackTraceElementTest extends Jdk16TestBase
+public class StackTraceElementTest extends Jdk17TestBase
 {
     public static class ErrorObject {
 

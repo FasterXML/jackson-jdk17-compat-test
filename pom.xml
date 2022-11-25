@@ -8,12 +8,12 @@
 	<!--
         <version>2.12.4-SNAPSHOT</version>
 -->
-        <version>2.13.4-SNAPSHOT</version>
+        <version>2.14.2-SNAPSHOT</version>
     </parent>
     <groupId>com.fasterxml.jackson.util</groupId>
     <artifactId>jackson-jdk17-compat-test</artifactId>
     <name>Jackson-JDK17-compat-test</name>
-    <version>2.13</version>
+    <version>2.14</version>
     <packaging>jar</packaging>
 
     <description>Test suite for verifying Jackson components' JDK17 compatibility

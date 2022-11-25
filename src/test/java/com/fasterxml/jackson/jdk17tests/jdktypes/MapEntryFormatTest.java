@@ -100,13 +100,13 @@ public class MapEntryFormatTest extends Jdk17TestBase
             entry = map.entrySet().iterator().next();
         }
     }
-    
+
     /*
-    /**********************************************************
+    /**********************************************************************
     /* Test methods, basic
-    /**********************************************************
+    /**********************************************************************
      */
-    
+
     private final ObjectMapper MAPPER = newJsonMapper();
 
     public void testInclusion() throws Exception
@@ -141,9 +141,9 @@ public class MapEntryFormatTest extends Jdk17TestBase
     }
 
     /*
-    /**********************************************************
+    /**********************************************************************
     /* Test methods, as-Object (Shape)
-    /**********************************************************
+    /**********************************************************************
      */
 
     public void testAsNaturalRoundtrip() throws Exception

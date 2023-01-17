@@ -5,7 +5,7 @@ import java.util.Arrays;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 
-public class Jdk17TestBase
+public abstract class Jdk17TestBase
     extends junit.framework.TestCase
 {
     /*

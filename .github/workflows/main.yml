@@ -1,0 +1,37 @@
+name: Build and Run Tests
+on:
+  push:
+    branches:
+    - master
+    - "2.15"
+    - "2.14"
+  pull_request:
+    branches:
+    - master
+    - "2.15"
+    - "2.14"
+  # Also run once per day anyway, at 10:00 UTC (18:00 PT)
+  schedule:
+    - cron: "0 10 * * *"
+permissions:
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ['ubuntu-20.04']
+    runs-on: ${{ matrix.os }}
+    env:
+      JAVA_OPTS: "-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: 17
+        cache: 'maven'
+    - name: Build
+      run: ./mvnw -V -B -ff -ntp verify

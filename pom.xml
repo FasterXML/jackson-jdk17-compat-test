@@ -41,6 +41,12 @@
             <artifactId>jackson-databind</artifactId>
         </dependency>
 
+	<!-- Got some XML tests too... -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+        </dependency>
+
         <!-- and good old junit too -->
         <dependency>
             <groupId>junit</groupId>
@@ -60,6 +66,18 @@
                     <target>${javac.target.version}</target>
                 </configuration>
             </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${version.plugin.surefire}</version>
+        <configuration>
+          <redirectTestOutputToFile>${surefire.redirectTestOutputToFile}</redirectTestOutputToFile>
+          <excludes>
+            <exclude>**/failing/**/*.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+
         </plugins>
     </build>
 

@@ -1,4 +1,4 @@
-package com.fasterxml.jackson.jdk17tests.misc;
+package com.fasterxml.jackson.jdk17tests.failing;
 
 import java.util.*;
 

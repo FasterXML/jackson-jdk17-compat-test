@@ -6,4 +6,4 @@ to stricter visibility restrictions).
 
 ## Status
 
-[![Build Status](https://travis-ci.org/FasterXML/jackson-jdk17-compat-test.svg)](https://travis-ci.org/FasterXML/jackson-jdk17-compat-test)
+[![Build (github)](https://github.com/FasterXML/jackson-jdk17-compat-test/actions/workflows/main.yml/badge.svg)](https://github.com/FasterXML/jackson-jdk17-compat-test/actions/workflows/main.yml)

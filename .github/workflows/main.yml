@@ -17,12 +17,10 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  Build-and-Test:
     strategy:
       fail-fast: false
-      matrix:
-        os: ['ubuntu-22.04']
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     env:
       JAVA_OPTS: "-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
     steps:
